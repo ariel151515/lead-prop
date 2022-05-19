@@ -1,9 +1,8 @@
 import React from "react";
 import Header from './Header'
 import Menu from './Menu'
-import styled from 'styled-components';
 import {useMuestraMenu} from '../contextos/contextoMenu'
-import {ContenedorGeneral} from '../elementos/Contenedores'
+import {ContenedorGeneral} from '../elementos/Elementos'
 import {Helmet} from "react-helmet";
 
 
@@ -16,9 +15,9 @@ const MisDatos = () => {
                 <title>Mis Datos</title>
             </Helmet>
             
+            <Header menu={menu}/> 
           <ContenedorGeneral menu={menu}>
               <Menu/>
-              <Header/>
               <h1>Mis Datos</h1>
           </ContenedorGeneral>
         </>

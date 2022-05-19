@@ -49,9 +49,7 @@ const Menu = () => {
         <MenuContenedor menu={menu}>
             <ul>
               <li>
-                  <Link to="/">
-
-                              <FontAwesomeIcon 
+                    <FontAwesomeIcon 
                                 icon={faBars} 
                                 style={
                                         { 
@@ -64,8 +62,6 @@ const Menu = () => {
                                     }
                                     onClick={() => setMenu(!menu)}
                             />
-
-                  </Link>
              </li>
 
 
@@ -258,7 +254,7 @@ const Menu = () => {
 
 
 
-    <Link to="/landing">
+    <Link to="/landing" target="_blank">
         <li>
             { !menu ?
 

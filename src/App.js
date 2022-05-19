@@ -1,5 +1,5 @@
 // Este es el ultimo ***
-import React from "react";
+import React, {useState} from "react";
 import WebFont from 'webfontloader';
 import {Routes, Route} from 'react-router-dom'
 import EditarLanding from './componentes/EditarLanding'
@@ -12,6 +12,7 @@ import IniciarSesion from './componentes/IniciarSesion'
 import { v4 as uuidv4 } from 'uuid';
 
 
+
 WebFont.load({
   google: {
     //Roboto:wght@300;400;700;900&family=Work+Sans:wght@400;500;700
@@ -21,11 +22,42 @@ WebFont.load({
 
 
 function App() {
+  const [etiquetas, setEtiquetas] = useState(
+      [
+        {
+          id:uuidv4(),
+          texto: 'Comprado',
+          cantidad: 23
+        },
+        {
+          id:uuidv4(),
+          texto: 'Contactado',
+          cantidad: 27
+        },
+        {
+          id:uuidv4(),
+          texto: 'Contactado',
+          cantidad: 27
+        },
+        {
+          id:uuidv4(),
+          texto: 'Contactado',
+          cantidad: 27
+        },
+        {
+          id:uuidv4(),
+          texto: 'Contactado',
+          cantidad: 27
+        }
+      ]
+    );
+
+
   return (
     <>
         <Routes>
            <Route path="/editar-landing" element={<EditarLanding/>} />
-           <Route path="/" element={<Dashboard/>} />
+           <Route path="/" element={<Dashboard etiquetas={etiquetas} setEtiquetas={setEtiquetas} />} />
            <Route path="/mis-datos" element={<MisDatos/>} />
            <Route path="/soporte" element={<Soporte/>} />
            <Route path="/landing" element={<Landing/>} />
