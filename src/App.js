@@ -1,4 +1,3 @@
-// Este es el ultimo ***
 import React, {useState} from "react";
 import WebFont from 'webfontloader';
 import {Routes, Route} from 'react-router-dom'
