@@ -7,7 +7,7 @@ import {Helmet} from "react-helmet";
 
 
 const Soporte = () => {
-  const {menu, setMenu} = useMuestraMenu();
+  const {menu} = useMuestraMenu();
 
     return ( 
         <>

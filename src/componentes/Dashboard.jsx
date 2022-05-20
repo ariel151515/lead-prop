@@ -1,53 +1,54 @@
 import React from "react";
 import Header from './Header'
 import Menu from './Menu'
-import styled from 'styled-components';
 import {useMuestraMenu} from '../contextos/contextoMenu'
 import {Helmet} from "react-helmet";
-import {ContenedorDashboards,ContenedorDoxMin,ContenedorDoxMax,BtnMoxMin,ContenedorGeneral} from '../elementos/Elementos'
+import {ContenedorDashboards,ContenedorDoxMin,ContenedorDoxMax,ContenedorGeneral} from '../elementos/Elementos'
 import ListaDeEtiquetas from './ListaDeEtiquetas'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faPlus} from '@fortawesome/free-solid-svg-icons'
 import TituloGeneral from './../componentes/TituloGeneral'
 import BtnEliminar from './BtnEliminar'
-
+import Btn from './Btn'
+import FormularioMostrarEtiquetas from './FormularioMostrarEtiquetas'
+import {useMuestraModal} from './../contextos/contextoFormularioAgregarEtiqueta'
+import TrioCR from './../componentes/TrioCR'
 
 const Dashboard = ({etiquetas,setEtiquetas}) => {
   const {menu, setMenu} = useMuestraMenu();
 
-  const mostrarFormularioAgregarEtiquetas = () => {
-    return alert('Hola')
-  }
+  // Muestra la ventana modal y el formulario
+  const {modal, setModal} = useMuestraModal()
 
     return ( 
         <>
            <Helmet>
                 <title>Dashboard</title>
             </Helmet>
-
+                 <FormularioMostrarEtiquetas modal={modal} etiquetas={etiquetas} setEtiquetas={setEtiquetas}/>
             <Header menu={menu} setMenu={setMenu}/> 
-          <ContenedorGeneral menu={menu}>
+            <ContenedorGeneral menu={menu}>
 
                 <Menu/>
 
                 <TituloGeneral menu={menu}/>
                 <BtnEliminar/>
+
               <ContenedorDashboards>
-                  <ContenedorDoxMin>
-                    
-                      <ListaDeEtiquetas etiquetas={etiquetas} setEtiquetas={setEtiquetas} />
 
-                        <BtnMoxMin onClick={() => mostrarFormularioAgregarEtiquetas() }>
-                            Etiquetas
-                            <FontAwesomeIcon icon={faPlus} style={{ marginLeft:'10px' }} />
-                        </BtnMoxMin>
-                        
-                  </ContenedorDoxMin>
+                        <ContenedorDoxMax>
+                           <h1>dsffsd</h1>
+                        </ContenedorDoxMax>
+     
+                        <ContenedorDoxMin>
+                            <ListaDeEtiquetas etiquetas={etiquetas} setEtiquetas={setEtiquetas} />
+                            <Btn value={'Crear nueva carpeta'} setModal={setModal} />
 
-                  <ContenedorDoxMax>
-                      <h2>dasdasd</h2>
-                  </ContenedorDoxMax>
+                            <TrioCR/>
+
+                        </ContenedorDoxMin>
+
+                       
               </ContenedorDashboards>
+
           </ContenedorGeneral>
         </>
      );

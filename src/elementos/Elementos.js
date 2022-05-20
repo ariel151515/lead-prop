@@ -16,12 +16,12 @@ const ContenedorDashboards = styled.div`
 const ContenedorDoxMin = styled.div`
     width: 20%;
     /*border:solid 1px;*/
+    margin-top: -15px;
     background: #ffff;
-    padding-top: 5px;
     padding-bottom:60px;
     padding-left:5px;
     padding-right:5px;
-    position: relative;
+    
       ul li {
           list-style: none;
       }
@@ -29,25 +29,12 @@ const ContenedorDoxMin = styled.div`
 
 const ContenedorDoxMax = styled.div`
     width: 78%;
-    height: 200px;
-    position: relative;
-    float:right;
-    margin-top:-359px;
+    height: 100%;
     /*border:solid 1px;*/
     background: #ffff;
-`;
-
-const BtnMoxMin = styled.button`
-   width: 100%;
-   padding-top: 15px;
-   padding-bottom:15px;
-   color: #ffffff;
-   font-family: 'roboto', arial, sans-serif;
-   font-size:14px;
-   background: #000;
-   cursor:pointer;
-   margin-top:-10px;
+    margin-top: 0px;
+    float: right;
 `;
 
 
-export {ContenedorGeneral, ContenedorDashboards, ContenedorDoxMin, ContenedorDoxMax,BtnMoxMin}
+export {ContenedorGeneral, ContenedorDashboards, ContenedorDoxMin, ContenedorDoxMax}

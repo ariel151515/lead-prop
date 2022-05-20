@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {NavLink, Link} from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars,faUser,faHeadset,faPen,faHouse,faEye,faRightToBracket } from '@fortawesome/free-solid-svg-icons'
+import { faBars,faUserPen,faHeadset,faWandMagicSparkles,faHouse,faEye,faRightToBracket } from '@fortawesome/free-solid-svg-icons'
 import {useMuestraMenu} from '../contextos/contextoMenu'
 
 const MenuContenedor = styled.div`
@@ -123,7 +123,7 @@ const Menu = () => {
 
                             <>
                             <FontAwesomeIcon 
-                                icon={faPen} 
+                                icon={faWandMagicSparkles} 
                                 style={
                                         { 
                                             color: '#fff', 
@@ -139,7 +139,7 @@ const Menu = () => {
                             :
                             <>
                             <FontAwesomeIcon 
-                                icon={faPen} 
+                                icon={faWandMagicSparkles} 
                                 style={
                                         { 
                                             color: '#fff', 
@@ -215,7 +215,7 @@ const Menu = () => {
 
                         <>
                         <FontAwesomeIcon 
-                            icon={faUser} 
+                            icon={faUserPen} 
                             style={
                                     { 
                                         color: '#fff', 
@@ -231,7 +231,7 @@ const Menu = () => {
                         :
                         <>
                         <FontAwesomeIcon 
-                            icon={faUser} 
+                            icon={faUserPen} 
                             style={
                                     { 
                                         color: '#fff', 

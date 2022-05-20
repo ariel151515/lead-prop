@@ -23,10 +23,11 @@ WebFont.load({
 function App() {
   const [etiquetas, setEtiquetas] = useState(
       [
+        /*
         {
           id:uuidv4(),
           texto: 'Comprado',
-          cantidad: 23
+          cantidad: 143
         },
         {
           id:uuidv4(),
@@ -36,7 +37,7 @@ function App() {
         {
           id:uuidv4(),
           texto: 'Contactado',
-          cantidad: 27
+          cantidad: 7
         },
         {
           id:uuidv4(),
@@ -46,11 +47,13 @@ function App() {
         {
           id:uuidv4(),
           texto: 'Contactado',
-          cantidad: 27
+          cantidad: 0
         }
+        */
       ]
     );
 
+  /* Esto es un ternario: {error.email && <p> {error.email} </p>} -  si error.email es true retorna <p>*/
 
   return (
     <>
