@@ -190,3 +190,15 @@ Bluloco Dark Theme
 
 Ubuntu
 https://www.youtube.com/watch?v=CrWq4lS4Zxo
+
+## App
+
+Slack
+cantasia
+figma
+visual
+spotify
+balena etcher
+office
+Run js
+zoom
