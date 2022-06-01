@@ -167,3 +167,26 @@ https://www.youtube.com/watch?v=wOYWfwCOgSE&t=
 
 DOMINA Flexbox con ESTE CURSO !!! (💙 + Proyecto Final )
 https://www.youtube.com/watch?v=Y6yviDqdMc8
+
+Bracket Pair Colorizer
+vscode-styled-components
+Theme - Oceanic Next
+styled-components-snippets
+Slack Theme
+Simple React Snippets
+px to rem
+Prettier - Code formatter
+Path Intellisense
+Night Wolf
+Material Icon Theme
+Markdown Theme Kit
+Markdown Theme Kit
+Live Server
+JavaScript Debugger (Nightly)Preview
+ESLint
+ES7 React/Redux/GraphQL/React-Native snippets
+Elm Emmet
+Bluloco Dark Theme
+
+Ubuntu
+https://www.youtube.com/watch?v=CrWq4lS4Zxo
