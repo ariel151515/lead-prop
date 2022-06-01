@@ -1,14 +1,10 @@
 import React from "react"
-import styled from 'styled-components'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faTrash} from '@fortawesome/free-solid-svg-icons'
+import styled from 'styled-components';
 
 
-
-
-const Btn = styled.button`
-    width: 31px;
-    height: 31px;
+const B = styled.button`
+    padding: 6px;
+    float: right;
     cursor: pointer;
     font-size: 12px;
     color: #444;
@@ -32,24 +28,14 @@ const Btn = styled.button`
     }
 `;
 
-const BtnEliminar = ({setMuestraVentanaConfirmar,muestraVentanaConfirmar,leadSelecionadoPuntoLength}) => {
-
-    const confirmaMo = () => {
-         if(leadSelecionadoPuntoLength){
-            setMuestraVentanaConfirmar(!muestraVentanaConfirmar)
-         }else{
-             return;
-         }
-    }
-
+const BtnGeneral = ({filtrarPorEtriqueta,agregarEtiqueta,crearNuevaEtiqueta}) => {
     return ( 
-
-           <Btn onClick={() => confirmaMo()}>
-             <FontAwesomeIcon icon={faTrash} style={{}}/>
-          </Btn>
-
+        <B>
+            {filtrarPorEtriqueta && filtrarPorEtriqueta}
+            {agregarEtiqueta && agregarEtiqueta}
+            {crearNuevaEtiqueta && crearNuevaEtiqueta}
+        </B>
      );
 }
  
-
-export default BtnEliminar;
+export default BtnGeneral;

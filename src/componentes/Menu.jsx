@@ -1,43 +1,71 @@
 import React from 'react';
 import styled from 'styled-components';
-import {NavLink, Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars,faUserPen,faHeadset,faWandMagicSparkles,faHouse,faEye,faRightToBracket } from '@fortawesome/free-solid-svg-icons'
+import { faBars,
+         faUserPen,
+         faHeadset,
+         faWandMagicSparkles,
+         faHouse,
+         faEye,
+         faRightToBracket,
+         faGear,
+         faPaperPlane,
+         faAngleLeft,
+         faAngleRight,
+         faTags,
+         faBullhorn,
+         faListUl
+        } from '@fortawesome/free-solid-svg-icons'
 import {useMuestraMenu} from '../contextos/contextoMenu'
 
+
+
 const MenuContenedor = styled.div`
-    width:${(props) => props.menu ? '12%' : '3.5%'};
-    height:100%;
+    width:${(props) => props.menu ? '15em' : '4.5em'};
+    font-size: 16px;
+    height:100vh;
     position: absolute;
-    background: #1D2335;
+    background: #041C66; /* #00074d  #041C66 */
+    border-right: 1px solid #E4E5EA;
     top: 0;
     left: 0;
+ 
      a{
          text-decoration: none;
      }
      ul li {
          list-style: none;
+         font-size: 26px;
+         margin-bottom: 30px;
 
      }
 `;
 
+
 const Text = styled.p`
-   color: #fff;
-   margin-top: -20px;
-   margin-left:15px;
+   color: #B0BBDB;
+   margin-top: -22px;
+   margin-left:45px;
    font-family: 'Roboto', sans-serif;
-   font-size: 14px;
    cursor: pointer;
+   font-size:14px;
 `;
 
+
+
 const TextS = styled.p`
-   color:#fff;
-   bottom:1.7%;
+   color:#B0BBDB;
+   bottom:0.625em;
    position: absolute;  
-   margin-left:15px;
+   margin-left:0.9375em;
    font-family: 'Roboto', sans-serif;
-   font-size: 14px;
    cursor: pointer;
+   font-size:14px;
+`;
+
+
+const Ul = styled.ul`
 `;
 
 
@@ -46,31 +74,36 @@ const Menu = () => {
     const {menu, setMenu} = useMuestraMenu();
  
     return ( 
-        <MenuContenedor menu={menu}>
-            <ul>
-              <li>
+
+<MenuContenedor menu={menu}>
+
+        <Ul>
+
+               {/* 
+               
+               
+               <li>
                     <FontAwesomeIcon 
-                                icon={faBars} 
-                                style={
-                                        { 
-                                            color: '#fff', 
-                                            fontSize: '34px', 
-                                            marginLeft: '-26px',
-                                            cursor: 'pointer'
+                           icon={faBars} 
+                           style={
+                                { 
+                                 color: '#FFFFFF', 
+                                 fontSize: '2.125em', 
+                                 marginLeft: '-23px',
+                                 cursor: 'pointer'
 
-                                        }
-                                    }
-                                    onClick={() => setMenu(!menu)}
-                            />
-             </li>
+                                }
+                              }
+                        onClick={() => setMenu(!menu)}
+                    />
+                </li>
+                
+               
+               */}
+             
 
-
-
-
-
-
-         <NavLink to="/">
-             <li>
+        <li title="Dashboard">
+             <NavLink to="/" activeStyle={{fontWeight: "bold", color: "#fff"}}>
                    { !menu ?
 
                      <>
@@ -78,11 +111,8 @@ const Menu = () => {
                             icon={faHouse} 
                             style={
                                     { 
-                                        color: '#fff', 
-                                        fontSize: '20px', 
-                                        cursor: 'pointer',
-                                        marginTop:'50px',
-                                        marginLeft:'-20px'
+                                        color: '#FFFFFF', 
+                                       
                                     }
                                 }
                        />
@@ -94,255 +124,348 @@ const Menu = () => {
                             icon={faHouse} 
                             style={
                                     { 
-                                        color: '#fff', 
-                                        fontSize: '20px', 
-                                        cursor: 'pointer',
-                                        marginTop:'50px',
-                                        marginLeft:'-20px'
+                                        color: '#FFFFFF', 
+                                       
                                     }
                                 }
                        />
 
-                       <Text>Dashboard</Text>
+                       <Text>DASHBOARD</Text>
                      </>
 
                    }
-
-             </li>
-       </NavLink>
-
-
-
-
-
-
-
-       <Link to="/editar-landing">
-             <li>
-                    { !menu ?
-
-                            <>
-                            <FontAwesomeIcon 
-                                icon={faWandMagicSparkles} 
-                                style={
-                                        { 
-                                            color: '#fff', 
-                                            fontSize: '20px', 
-                                            cursor: 'pointer',
-                                            marginTop:'30',
-                                            marginLeft:'-20px'
-                                        }
-                                    }
-                            />
-                            </>
-
-                            :
-                            <>
-                            <FontAwesomeIcon 
-                                icon={faWandMagicSparkles} 
-                                style={
-                                        { 
-                                            color: '#fff', 
-                                            fontSize: '20px', 
-                                            cursor: 'pointer',
-                                            marginTop:'19px',
-                                            marginLeft:'-20px'
-                                        }
-                                    }
-                            />
-
-                            <Text>Editar Landing</Text>
-                            </>
-
-                        }
-             </li>
-        </Link>
-
-
-
-
-
-
-        <Link to="/soporte">
-             <li>
-                    { !menu ?
-
-                            <>
-                            <FontAwesomeIcon 
-                                icon={faHeadset} 
-                                style={
-                                        { 
-                                            color: '#fff', 
-                                            fontSize: '20px', 
-                                            cursor: 'pointer',
-                                            marginTop:'30',
-                                            marginLeft:'-20px'
-                                        }
-                                    }
-                            />
-                            </>
-
-                            :
-                            <>
-                            <FontAwesomeIcon 
-                                icon={faHeadset} 
-                                style={
-                                        { 
-                                            color: '#fff', 
-                                            fontSize: '20px', 
-                                            cursor: 'pointer',
-                                            marginTop:'19px',
-                                            marginLeft:'-20px'
-                                        }
-                                    }
-                            />
-
-                            <Text>Soporte</Text>
-                            </>
-
-                        }
-                </li>
-            </Link>
-
-
-
-
-
-
-       <Link to="/mis-datos">
-                <li>
-                    { !menu ?
-
-                        <>
-                        <FontAwesomeIcon 
-                            icon={faUserPen} 
-                            style={
-                                    { 
-                                        color: '#fff', 
-                                        fontSize: '20px', 
-                                        cursor: 'pointer',
-                                        marginTop:'30',
-                                        marginLeft:'-20px'
-                                    }
-                                }
-                        />
-                        </>
-
-                        :
-                        <>
-                        <FontAwesomeIcon 
-                            icon={faUserPen} 
-                            style={
-                                    { 
-                                        color: '#fff', 
-                                        fontSize: '20px', 
-                                        cursor: 'pointer',
-                                        marginTop:'19px',
-                                        marginLeft:'-20px'
-                                    }
-                                }
-                        />
-
-                        <Text>Mi cuenta</Text>
-                        </>
-
-                    }
-               </li>
-        </Link>
-
-
-
-
-
-    <Link to="/landing" target="_blank">
-        <li>
-            { !menu ?
-
-                <>
-                <FontAwesomeIcon 
-                    icon={faEye} 
-                    style={
-                            { 
-                                color: '#fff', 
-                                fontSize: '20px', 
-                                cursor: 'pointer',
-                                marginTop:'30',
-                                marginLeft:'-20px'
-                            }
-                        }
-                />
-                
-                </>
-                :
-                <>
-                <FontAwesomeIcon 
-                    icon={faEye} 
-                    style={
-                            { 
-                                color: '#fff', 
-                                fontSize: '20px', 
-                                cursor: 'pointer',
-                                marginTop:'19px',
-                                marginLeft:'-20px'
-                            }
-                        }
-                />
-
-                <Text>Web</Text>
-                </>
-          } 
+          </NavLink>
        </li>
-    </Link>
 
 
 
 
 
 
-    <Link to="/">
-             <li>
-                { !menu ?
-                 <>
-                   <FontAwesomeIcon 
-                        icon={faRightToBracket} 
-                        style={
-                                { 
-                                  color: '#fff',
-                                  cursor: 'pointer', 
-                                  fontSize: '20px', 
-                                  marginLeft: '-20px',
-                                  bottom: '3%',                              
-                                  position: 'absolute'
+       <li title="Soporte">
+             <NavLink to="/soporte">
+                   { !menu ?
+
+                     <>
+                        <FontAwesomeIcon 
+                            icon={faHeadset} 
+                            style={
+                                    { 
+                                        color: '#FFFFFF', 
+                                       
+                                    }
                                 }
-                             }
-                    />
-                 </>
+                       />
+                     </>
 
-                 :
+                     :
+                     <>
+                        <FontAwesomeIcon 
+                            icon={faHeadset} 
+                            style={
+                                    { 
+                                        color: '#FFFFFF', 
+                                       
+                                    }
+                                }
+                       />
 
-                 <>
-                    <FontAwesomeIcon 
-                        icon={faRightToBracket} 
-                        style={
-                                { 
-                                    color: '#fff',
+                       <Text>SOPORTE</Text>
+                     </>
+
+                   }
+          </NavLink>
+       </li>
+
+
+
+
+
+
+       <li title="Mi cuenta">
+             <NavLink to="/mis-datos" >
+                   { !menu ?
+
+                     <>
+                        <FontAwesomeIcon 
+                            icon={faUserPen} 
+                            style={
+                                    { 
+                                        color: '#FFFFFF', 
+                                       
+                                    }
+                                }
+                       />
+                     </>
+
+                     :
+                     <>
+                        <FontAwesomeIcon 
+                            icon={faUserPen} 
+                            style={
+                                    { 
+                                        color: '#FFFFFF', 
+                                      
+                                    }
+                                }
+                       />
+
+                       <Text>MI CUENTA</Text>
+                     </>
+
+                   }
+          </NavLink>
+       </li>
+
+
+
+
+
+
+       <li title="Gestionat etiquetas">
+             <NavLink to="/gestionar-etiquetas" >
+                   { !menu ?
+
+                     <>
+                        <FontAwesomeIcon 
+                            icon={faTags} 
+                            style={
+                                    { 
+                                        color: '#FFFFFF', 
+                                       
+                                    }
+                                }
+                       />
+                     </>
+
+                     :
+                     <>
+                        <FontAwesomeIcon 
+                            icon={faTags} 
+                            style={
+                                    { 
+                                        color: '#FFFFFF', 
+                                       
+                                    }
+                                }
+                       />
+
+                       <Text>GESTIONAR ETIQUETAS</Text>
+                     </>
+
+                   }
+          </NavLink>
+       </li>
+
+
+
+
+
+
+       <li title="Personalizar mensaje de WhatsApp">
+             <NavLink to="/mensajewhatsapp" >
+                   { !menu ?
+
+                     <>
+                        <FontAwesomeIcon 
+                            icon={faPaperPlane} 
+                            style={
+                                    { 
+                                        color: '#FFFFFF', 
+                                      
+                                    }
+                                }
+                       />
+                     </>
+
+                     :
+                     <>
+                        <FontAwesomeIcon 
+                            icon={faPaperPlane} 
+                            style={
+                                    { 
+                                        color: '#FFFFFF', 
+                                        
+                                    }
+                                }
+                       />
+
+                       <Text>WHATSAPP</Text>
+                     </>
+
+                   }
+          </NavLink>
+       </li>
+
+
+
+       <li title="Web">
+             <NavLink to="/crear-publicacion">
+                   { !menu ?
+
+                     <>
+                        <FontAwesomeIcon 
+                            icon={faBullhorn} 
+                            style={
+                                    { 
+                                        color: '#FFFFFF', 
+                                       
+                                    }
+                                }
+                       />
+                     </>
+
+                     :
+                     <>
+                        <FontAwesomeIcon 
+                            icon={faBullhorn} 
+                            style={
+                                    { 
+                                        color: '#FFFFFF', 
+                                     
+                                    }
+                                }
+                       />
+
+                       <Text>PUBLICAR</Text>
+                     </>
+
+                   }
+          </NavLink>
+       </li>
+
+
+
+       <li title="Web">
+             <NavLink to="/panel-publicaciones">
+                   { !menu ?
+
+                     <>
+                        <FontAwesomeIcon 
+                            icon={faListUl} 
+                            style={
+                                    { 
+                                        color: '#FFFFFF', 
+                                       
+                                    }
+                                }
+                       />
+                     </>
+
+                     :
+                     <>
+                        <FontAwesomeIcon 
+                            icon={faListUl} 
+                            style={
+                                    { 
+                                        color: '#FFFFFF', 
+                                     
+                                    }
+                                }
+                       />
+
+                       <Text>PUBlICACIONES</Text>
+                     </>
+
+                   }
+          </NavLink>
+       </li>
+
+
+
+
+
+       <li title="Cerra Sesion">
+             <NavLink to="/" >
+                   { !menu ?
+
+                     <>
+                        <FontAwesomeIcon 
+                            icon={faRightToBracket} 
+                            style={
+                                    { 
+                                        color: '#FFFFFF', 
+                                       
+                                    }
+                                }
+                       />
+                     </>
+
+                     :
+                     <>
+                        <FontAwesomeIcon 
+                            icon={faRightToBracket} 
+                            style={
+                                    { 
+                                        color: '#FFFFFF', 
+                                       
+                                    }
+                                }
+                       />
+
+                       <Text>CERRAR SECION</Text>
+                     </>
+
+                   }
+          </NavLink>
+       </li>
+
+
+
+       <li title="Dashboard">
+             <NavLink to="/" onClick={() => setMenu(!menu)}>
+                   { !menu ?
+
+                     <>
+                        <FontAwesomeIcon 
+                            icon={faAngleRight} 
+                            style={
+                                    { 
+                                        color: '#FFFFFF', 
+                                       
+                                    }
+                                }
+                       />
+                     </>
+
+                     :
+                     <>
+                        <FontAwesomeIcon 
+                            icon={faAngleLeft} 
+                            style={
+                                    { 
+                                        color: '#FFFFFF', 
+                                       
+                                    }
+                                }
+                       />
+
+                       <Text>DASHBOARD</Text>
+                     </>
+
+                   }
+          </NavLink>
+       </li>
+
+
+
+
+
+      </Ul>
+
+
+    {/*
+
+       color: '#FFFF',
                                     cursor: 'pointer', 
-                                    fontSize: '20px', 
-                                    marginLeft: '-20px',
-                                    bottom: '3%',                              
+                                    fontSize: '1.25em', 
+                                    marginLeft: '-1em',
+                                    bottom: '1.2em',                              
                                     position: 'absolute'
-                                }
-                            }
-                    />
-                    <TextS>Cerrar Sesion</TextS>
-               </> 
-                }
-            </li>
-        </Link>
+
+    */}
 
 
-
-    </ul>
         </MenuContenedor>
      );
 }

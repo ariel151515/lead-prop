@@ -9,6 +9,7 @@ const useMuestraModal = () => {
 
 const MuestraModalProvider = ({children}) => {
  const [modal, setModal] = useState(false);
+ 
 
     return ( 
         <MuestraModal.Provider value={{modal: modal, setModal:setModal}}>

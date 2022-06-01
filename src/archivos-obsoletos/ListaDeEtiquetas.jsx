@@ -5,8 +5,10 @@ import {useLimiteEtiquetas} from './../contextos/contextoLiimiteEtiquetas'
 
 const Uu = styled.ul`
     padding: 0px;
-    padding-top:2px;
+    padding-top:-10px;
     width:101%;
+    max-height:350px;
+  /*  overflow-y: scroll; */
 `;
 
 const HH = styled.p`

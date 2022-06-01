@@ -1,32 +1,28 @@
 import React from "react"
 import styled from 'styled-components'
-import logo from './../img/logo.png'
 
 const HeaderContenedor = styled.div`
     width: 100%;
-    min-height:30px;
-    background: #fff;
+    background: #00074B;
 `;
 
 const ConHeader = styled.div`
-    width: 80%;
-    min-height:30px;
-    padding-top:1%;
-    padding-bottom:1%;
-    background: #fff;
-    margin-left:${(props) => props.menu ? '13%' : '4.5%'};
+    width: 100%;
+    background: #00074B;
+    {/*margin-left:${(props) => props.menu ? '13%' : '4.5%'};*/}
 `;
 
 
 const Logo = styled.img`
-    
+    width: 5%;
+    padding-left: 1.5%;
 `;
 
 const Header = ({menu,setMenu}) => {
     return ( 
         <HeaderContenedor>
            <ConHeader setMenu={setMenu} menu={menu}>
-             <Logo src={logo}/>
+             {/* <Logo src={logo}/> */}
            </ConHeader>
         </HeaderContenedor>
      );

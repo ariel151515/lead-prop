@@ -1,13 +1,13 @@
 import React from "react";
-import Header from './Header'
-import Menu from './Menu'
+import Header from '../componentes/Header'
+import Menu from '../componentes/Menu'
 import {useMuestraMenu} from '../contextos/contextoMenu'
 import {ContenedorGeneral} from '../elementos/Elementos'
 import {Helmet} from "react-helmet";
 
 
 const EditarLanding = () => {
-  const {menu, setMenu} = useMuestraMenu();
+  const {menu} = useMuestraMenu();
 
     return ( 
         <>

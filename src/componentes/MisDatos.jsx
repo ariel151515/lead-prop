@@ -7,16 +7,17 @@ import {Helmet} from "react-helmet";
 
 
 const MisDatos = () => {
-  const {menu, setMenu} = useMuestraMenu();
+  const {menu} = useMuestraMenu();
+
 
     return ( 
         <>
             <Helmet>
                 <title>Mis Datos</title>
             </Helmet>
-            
+
             <Header menu={menu}/> 
-          <ContenedorGeneral menu={menu}>
+          <ContenedorGeneral menu={menu} >
               <Menu/>
               <h1>Mis Datos</h1>
           </ContenedorGeneral>

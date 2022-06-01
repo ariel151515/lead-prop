@@ -1,0 +1,18 @@
+ver => soy Henrry React Redux 
+Carlos Arturo => App de tareas con Redux
+Tutorial you tube ToDo List con react y Redux
+Check practica Redux
+Pasar mi app a Redux
+
+Estudiar css grid
+terminart my app 
+vender my app
+
+$$$$$$$$$$$$$$$$
+
+
+CRUD CON REACT MONGODB NODE PARTE 3
+https://www.youtube.com/watch?v=QUonH2iqBiU
+
+BACKEND EN NODE, MONGO, VALIDACIONES JWT PARTE 1
+https://www.youtube.com/watch?v=bKpKDR7yGg8

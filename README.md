@@ -70,3 +70,100 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 Ultimo 19/05/2022 0:50
+
+---
+
+MERN Stack CRUD - Mongo Db, Express Js, React Js, Node Js
+https://www.youtube.com/watch?v=8s_ZbPkPkRk
+
+---
+
+React Material UI Tutorial - 41 - Date Range Picker
+https://www.youtube.com/watch?v=l-TYVlhIEMI
+
+---
+
+Create React DateRangePicker in 5 Minutes
+https://www.youtube.com/watch?v=RCC_K6FbZRU
+
+---
+
+https://www.daterangepicker.com/
+
+boxeo Tyson knockouts
+https://www.youtube.com/watch?v=lC4KxGoDJXk
+
+csss degradado!!!
+https://cssgradient.io/
+
+Temaso boxeo!!
+https://www.youtube.com/watch?v=TJegpMUXPhA&list=RDMM&index=12
+
+marketing inmobiliario
+https://neotempo.co/ebookmarketinginmobiliario/
+
+landing inmobiliaria
+https://mudafy.com.ar/casa/alejandro-magarinos-cervantes-4300-casa-en-venta-nrif
+
+https://open-bootcamp.com/#trabajo
+
+vh = viewport height (100 vh)
+vw = viewport width (100 vw)
+
+tutorial https://www.youtube.com/watch?v=nz6DIeBdZtY
+1em = toma el valor de los pixeles del contenedor padre (contendor {font-size:16px } = 1em)
+1rem = toma el valor de los pixeles del body
+
+alt izquiero y z para convertir automaticamente en rem o em
+
+css grid
+https://www.youtube.com/watch?v=oCHdFiCgOSE
+
+tabla con header fijo
+https://www.youtube.com/watch?v=YEhuswfcf7I
+
+ver componentes reutilizables
+
+css
+30px 30px 36px 57px = arriba-derecha abajo-izquierda
+
+Proximo menu lateral
+https://www.youtube.com/watch?v=wEfaoAa99XY
+
+Alerta js css
+https://www.youtube.com/watch?v=hm79I2JpwJw
+https://www.youtube.com/watch?v=qCg5koUVTgE
+
+Interesante de figma
+https://www.untitledui.com/components/portfolio-mockups
+https://www.untitledui.com/components/pricing-sections
+https://www.untitledui.com/components/date-pickers
+
+can
+https://www.youtube.com/watch?v=HfTNk4Km5lc
+https://www.youtube.com/watch?v=yanIkah38uQ
+
+buen tema
+https://www.youtube.com/watch?v=6cRctjPRv6M
+https://www.youtube.com/watch?v=4lbMT-bGGSs
+https://www.youtube.com/watch?v=ypogQwW_GxY
+
+Rutas dinamicas
+https://www.youtube.com/watch?v=Q9YClZMj9-M
+
+Silder de imagenes React
+https://www.npmjs.com/package/react-multi-carousel
+https://www.npmjs.com/package/react-image-galleryx
+https://www.npmjs.com/package/react-images-carousel
+
+Quick Start - Texto enriquesido editor
+https://www.npmjs.com/package/react-quill
+
+🆕MERN Stack CRUD - Mongo Db, Express Js, React Js, Node Js
+https://www.youtube.com/watch?v=8s_ZbPkPkRk&t=8044s
+
+Curso de css grid completo
+https://www.youtube.com/watch?v=wOYWfwCOgSE&t=
+
+DOMINA Flexbox con ESTE CURSO !!! (💙 + Proyecto Final )
+https://www.youtube.com/watch?v=Y6yviDqdMc8
